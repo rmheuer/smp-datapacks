@@ -1,0 +1,6 @@
+   {
+       "pack": {
+           "pack_format": 48,
+           "description": "Sends you your coordinates and dimension when you die"
+       }
+   }
