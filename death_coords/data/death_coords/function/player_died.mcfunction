@@ -13,10 +13,10 @@ execute store result score @s death_coords.dimension run data get entity @s Dime
 # Send message
 
 # Overworld (minecraft:overworld)
-execute as @s[scores={death_coords.dimension=19}] run tellraw @s [{"text":"You died at X=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.x"},"color":"green"},{"text":" Y=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.y"},"color":"green"},{"text":" Z=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.z"},"color":"green"},{"text":" in the","color":"gold"},{"text":" Overworld","color":"green"}]
+execute as @s[scores={death_coords.dimension=19}] run tellraw @s {"color":"gold","text":"You died at X=","extra":[{"score":{"name":"@s","objective":"death_coords.x"},"color":"green"},{"text":" Y="},{"score":{"name":"@s","objective":"death_coords.y"},"color":"green"},{"text":" Z="},{"score":{"name":"@s","objective":"death_coords.z"},"color":"green"},{"text":" in the"},{"text":" Overworld","color":"green"}]}
 
 # Nether (minecraft:the_nether)
-execute as @s[scores={death_coords.dimension=20}] run tellraw @s [{"text":"You died at X=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.x"},"color":"yellow"},{"text":" Y=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.y"},"color":"yellow"},{"text":" Z=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.z"},"color":"yellow"},{"text":" in the","color":"gold"},{"text":" Nether","color":"yellow"}]
+execute as @s[scores={death_coords.dimension=20}] run tellraw @s {"color":"gold","text":"You died at X=","extra":[{"score":{"name":"@s","objective":"death_coords.x"},"color":"yellow"},{"text":" Y="},{"score":{"name":"@s","objective":"death_coords.y"},"color":"yellow"},{"text":" Z="},{"score":{"name":"@s","objective":"death_coords.z"},"color":"yellow"},{"text":" in the"},{"text":" Nether","color":"yellow"}]}
 
 # End (minecraft:the_end)
-execute as @s[scores={death_coords.dimension=17}] run tellraw @s [{"text":"You died at X=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.x"},"color":"aqua"},{"text":" Y=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.y"},"color":"aqua"},{"text":" Z=","color":"gold"},{"score":{"name":"@s","objective":"death_coords.z"},"color":"aqua"},{"text":" in the","color":"gold"},{"text":" End","color":"aqua"}]
+execute as @s[scores={death_coords.dimension=17}] run tellraw @s {"color":"gold","text":"You died at X=","extra":[{"score":{"name":"@s","objective":"death_coords.x"},"color":"aqua"},{"text":" Y="},{"score":{"name":"@s","objective":"death_coords.y"},"color":"aqua"},{"text":" Z="},{"score":{"name":"@s","objective":"death_coords.z"},"color":"aqua"},{"text":" in the"},{"text":" End","color":"aqua"}]}
